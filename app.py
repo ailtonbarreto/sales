@@ -63,7 +63,7 @@ fig_date.update_yaxes(showgrid=False)
 col1.plotly_chart(fig_date, use_container_width=True)
 
 fig_prod = px.bar(df_filtered.groupby(['Day','Product line'])[["Total"]].sum().reset_index(), 
-        x="Date", y="Product line", 
+        x="Day", y="Product line", 
         color="City", title="Product Line",
         orientation="h",
         color_discrete_sequence=['#16db65','#058c42','#04471c'])
