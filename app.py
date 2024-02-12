@@ -127,10 +127,9 @@ border= """
 
 border2= """
     <style>
-    [data-testid="stVerticalBlockBorderWrapper"]
+    [data-testid="stHorizontalBlock"]
     {
     background-color: white;
-    width="1780";
     border-radius: 15px;
     }
     </style>
