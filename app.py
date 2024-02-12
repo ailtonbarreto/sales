@@ -45,7 +45,7 @@ df["Month"] = df["Month"].apply(determinar_mes)
 #----------------------------------------------------------------------------------------------------
 #Page layout
 cola, colb = st.columns(2)
-container = st.container()
+container = st.container(cola,colb)
 col1, col2 = st.columns(2)
 col3, col4, col5 = st.columns(3)
 
