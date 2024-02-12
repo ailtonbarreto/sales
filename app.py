@@ -127,7 +127,7 @@ border= """
 
 border2= """
     <style>
-    [data-testid="stHorizontalBlock"]
+    [data-testid="stVerticalBlock"]
     {
     background-color: black;
     border-radius: 15px 15px;
