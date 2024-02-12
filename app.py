@@ -66,7 +66,7 @@ month = st.sidebar.selectbox("Month", df["Month"].unique())
 df_filtered = df.query('Year == @year & Month == @month')
 #----------------------------------------------------------------------------------------------------
 #Page layout
-st.title(f'  Sales Analysis {month} - {year}',anchor=False)
+st.title(f'         Sales Analysis {month} - {year}',anchor=False)
 col1, col2 = st.columns(2)
 col3, col4, col5 = st.columns(3)
 
