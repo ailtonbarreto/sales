@@ -125,6 +125,18 @@ border3= """
 """
 
 
+border= """
+    <style>
+    [data-testid="stSelectbox"]
+    {
+    background-color: #FFFFFF;
+    border-radius: 10px 10px;
+    }
+    </style>
+"""
+
+st.markdown(border,unsafe_allow_html=True)
+
 st.markdown(border2,unsafe_allow_html=True)
 
 
