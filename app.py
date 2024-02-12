@@ -100,16 +100,6 @@ fig_rating.update_yaxes(showgrid=False)
 col5.plotly_chart(fig_rating, use_container_width=True)
 #----------------------------------------------------------------------------------------------------
 
-# border= """
-#     <style>
-#     [data-testid="stFullScreenFrame"]
-#     {
-#     background-color: black;
-#     border-radius: 15px;
-#     }
-#     </style>
-# """
-
 
 border2= """
     <style>
@@ -121,21 +111,12 @@ border2= """
 """
 
 
-border3= """
-    <style>
-    [data-testid="element-container"]
-    {
-    background-color: black;
-    border-radius: 15px 15px;
-    }
-    </style>
-"""
+
 
 
 st.markdown(border2,unsafe_allow_html=True)
 
-# st.markdown(border,unsafe_allow_html=True)
 
-st.markdown(border3,unsafe_allow_html=True)
+
 
 #----------------------------------------------------------------------------------------------------
