@@ -41,14 +41,7 @@ def determinar_mes(valor):
 
 
 df["Month"] = df["Month"].apply(determinar_mes)
-#----------------------------------------------------------------------------------------------------
-#filters
 
-
-#----------------------------------------------------------------------------------------------------
-#dataframe filtered
-
-df_filtered = df.query('Year == @year & Month == @month')
 #----------------------------------------------------------------------------------------------------
 #Page layout
 
@@ -60,6 +53,13 @@ with container:
     year = st.selectbox("Year",df["Year"].unique())
     month = st.selectbox("Month", df["Month"].unique())
     st.title(f'Sales Analysis {month} - {year}',anchor=False)
+
+
+#----------------------------------------------------------------------------------------------------
+#dataframe filtered
+  
+df_filtered = df.query('Year == @year & Month == @month')
+
 #----------------------------------------------------------------------------------------------------
 #Graphics
 
