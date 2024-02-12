@@ -127,7 +127,7 @@ border= """
 
 border2= """
     <style>
-    [data-testid="stHorizontalBlock"]
+    [data-testid="column"]
     {
     background-color: white;
     border-radius: 15px;
