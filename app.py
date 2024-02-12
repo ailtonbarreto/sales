@@ -127,7 +127,7 @@ border= """
 
 border2= """
     <style>
-    [data-testid="stVerticalBlockBorderWrapper"]
+    [class="main-svg"]
     {
     background-color: black;
     border-radius: 15px 15px;
