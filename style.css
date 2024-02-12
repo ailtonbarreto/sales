@@ -20,6 +20,6 @@ div header{
     color: white;
 }
 
-svg.viewBox{
-    visibility: hidden;
+.svg-container{
+    background-color: blueviolet;
 }
