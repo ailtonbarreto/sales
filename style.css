@@ -20,6 +20,6 @@ div header{
     color: white;
 }
 
-.svg-container{
-    background-color: blueviolet;
+#svg-container{
+    border-radius: 15px;
 }
