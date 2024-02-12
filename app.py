@@ -11,8 +11,8 @@ pgbg= """
     <style>
     [data-testid="stAppViewBlockContainer"]
     {
-    background-image = url("https://www.chromethemer.com/wallpapers/chromebook-wallpapers/images/960/blue-space-chromebook-wallpaper.jpg")
-    background-size = cover
+    background-image: url("https://www.chromethemer.com/wallpapers/chromebook-wallpapers/images/960/blue-space-chromebook-wallpaper.jpg")
+    background-size: cover
     }
     </style>
 """
