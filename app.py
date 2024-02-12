@@ -127,7 +127,7 @@ border= """
 
 border2= """
     <style>
-    [class="main-svg"]
+    [class="bglayer"]
     {
     background-color: black;
     border-radius: 15px 15px;
