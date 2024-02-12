@@ -9,7 +9,7 @@ st.sidebar.title("Filters",anchor=False)
 
 pgbg= """
     <style>
-    ["styles_stateContainer__CelYF"]
+    url("https://www.chromethemer.com/wallpapers/chromebook-wallpapers/images/960/blue-space-chromebook-wallpaper.jpg")
     </style>
 """
 
