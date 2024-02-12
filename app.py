@@ -116,7 +116,7 @@ col5.plotly_chart(fig_rating, use_container_width=True)
 
 border= """
     <style>
-    [data-testid="stFullScreenFrame""]
+    [data-testid="stFullScreenFrame"]
     {
     background-color: black;
     border-radius: 15px;
