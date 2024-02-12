@@ -1,0 +1,25 @@
+
+
+.modebar-container{
+    visibility: hidden;
+}
+
+header{
+    visibility: hidden;
+}
+
+section{
+    background-color: black;
+}
+
+h1{
+    color: white;
+}
+
+div header{
+    color: white;
+}
+
+svg.viewBox{
+    visibility: hidden;
+}
