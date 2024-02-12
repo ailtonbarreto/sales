@@ -12,7 +12,7 @@ pgbg= """
     <style>
     [data-testid="stAppViewContainer"]
     {
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixelplex.io%2Fblog%2Fbusiness-intelligence-bi-statistics%2F&psig=AOvVaw2cce9FYGfhFzq6Ogbhckv9&ust=1707856850169000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCPCul9nUpoQDFQAAAAAdAAAAABAF");
+    background-image: url("https://i.pinimg.com/736x/1d/5a/9e/1d5a9e0d935d20297b6033d9871f1562.jpg");
     background-size: cover;
     </style>
 """
