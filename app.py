@@ -2,8 +2,14 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide",initial_sidebar_state="collapsed")
 st.sidebar.title("Filters",anchor=False)
+#----------------------------------------------------------------------------------------------------
+#CSS
+
+with open("style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>",unsafe_allow_html = True)
+
 #----------------------------------------------------------------------------------------------------
 
 df = pd.read_csv("supermarket_sales.csv", sep=";", decimal=",")
@@ -59,6 +65,7 @@ col3, col4, col5 = st.columns(3)
 fig_date = px.bar(df_filtered.groupby(['Day','City'])[["Total"]].sum().reset_index(),
         x="Day", y="Total", color="City", title="Daily Sales",
         color_discrete_sequence=['#023e8a','#0a9396','#0077b6'])
+fig_date.update_scenes(overwrite=False)
 fig_date.update_yaxes(showgrid=False)
 col1.plotly_chart(fig_date, use_container_width=True)
 
@@ -68,6 +75,7 @@ fig_prod = px.bar(df_filtered,
         orientation="h",
         color_discrete_sequence=['#16db65','#058c42','#04471c'])
 fig_prod.update_xaxes(showgrid=False)
+
 col2.plotly_chart(fig_prod, use_container_width=True)
 
 #----------------------------------------------------------------------------------------------------
@@ -91,12 +99,4 @@ fig_rating = px.bar(df_filtered, y="Rating", x="City",color_discrete_sequence=['
 fig_rating.update_yaxes(showgrid=False)
 col5.plotly_chart(fig_rating, use_container_width=True)
 #----------------------------------------------------------------------------------------------------
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
 
