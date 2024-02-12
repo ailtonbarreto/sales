@@ -127,10 +127,10 @@ border= """
 
 border2= """
     <style>
-    [data-testid="column"]
+    [data-testid="stHorizontalBlock"]
     {
-    background-color: white;
-    border-radius: 15px;
+    background-color: black;
+    border-radius: 15px 15px;
     }
     </style>
 """
