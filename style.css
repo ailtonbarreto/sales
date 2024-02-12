@@ -20,6 +20,6 @@ div header{
     color: white;
 }
 
-#svg-container{
+.js-plotly-plot{
     border-radius: 15px;
 }
