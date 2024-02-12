@@ -44,14 +44,14 @@ df["Month"] = df["Month"].apply(determinar_mes)
 
 #----------------------------------------------------------------------------------------------------
 #Page layout
-cola, colb = st.columns(2)
-container = st.container(cola,colb)
+cola, colb, colc = st.columns([5,1,1])
 col1, col2 = st.columns(2)
 col3, col4, col5 = st.columns(3)
 
 
 with colb:
     year = st.selectbox("Year",df["Year"].unique())
+with colc:
     month = st.selectbox("Month", df["Month"].unique())
 
 #----------------------------------------------------------------------------------------------------
