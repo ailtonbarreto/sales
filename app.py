@@ -124,4 +124,18 @@ border= """
     </style>
 """
 
+
+border2= """
+    <style>
+    [data-testid="StyledLinkIconContainer"]
+    {
+    background-color: black;
+    border-radius: 15px;
+    }
+    </style>
+"""
+
+
+st.markdown(border2,unsafe_allow_html=True)
+
 st.markdown(border,unsafe_allow_html=True)
