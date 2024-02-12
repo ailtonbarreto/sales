@@ -127,7 +127,7 @@ border= """
 
 border2= """
     <style>
-    [class="bglayer"]
+    [class="st-emotion-cache-keje6w e1f1d6gn3"]
     {
     background-color: black;
     border-radius: 15px 15px;
