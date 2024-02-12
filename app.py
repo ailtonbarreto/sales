@@ -57,9 +57,9 @@ col1, col2 = st.columns(2)
 col3, col4, col5 = st.columns(3)
 
 with container:
-    st.title(f'Sales Analysis {month} - {year}',anchor=False)
     year = st.selectbox("Year",df["Year"].unique())
     month = st.selectbox("Month", df["Month"].unique())
+    st.title(f'Sales Analysis {month} - {year}',anchor=False)
 #----------------------------------------------------------------------------------------------------
 #Graphics
 
