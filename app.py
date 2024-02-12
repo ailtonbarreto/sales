@@ -111,12 +111,20 @@ border2= """
 """
 
 
-
+border3= """
+    <style>
+    [data-testid="element-container"]
+    {
+    background-color: black;
+    border-radius: 15px 15px;
+    }
+    </style>
+"""
 
 
 st.markdown(border2,unsafe_allow_html=True)
 
 
-
+st.markdown(border3,unsafe_allow_html=True)
 
 #----------------------------------------------------------------------------------------------------
