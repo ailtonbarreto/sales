@@ -136,6 +136,18 @@ border2= """
 """
 
 
+
+border3= """
+    <style>
+    [data-testid="stVerticalBlockBorderWrapper"]
+    {
+    background-color: white;
+    border-radius: 15px;
+    }
+    </style>
+"""
+st.markdown(border3,unsafe_allow_html=True)
+
 st.markdown(border2,unsafe_allow_html=True)
 
 st.markdown(border,unsafe_allow_html=True)
