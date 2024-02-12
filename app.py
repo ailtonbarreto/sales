@@ -114,7 +114,7 @@ border2= """
 """
 
 
-border3= """
+border3 = """
     <style>
     [data-testid="element-container"]
     {
@@ -125,7 +125,7 @@ border3= """
 """
 
 
-border= """
+border = """
     <style>
     [data-testid="stSelectbox"]
     {
@@ -134,6 +134,18 @@ border= """
     }
     </style>
 """
+
+desativardetalhes = """
+    <style>
+    [data-testid="StyledFullScreenButton"]
+    {
+    visibility: hidden;
+    }
+    </style>
+"""
+
+
+st.markdown(desativardetalhes,unsafe_allow_html=True)
 
 st.markdown(border,unsafe_allow_html=True)
 
