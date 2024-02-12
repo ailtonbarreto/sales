@@ -130,6 +130,7 @@ border2= """
     [data-testid="stVerticalBlockBorderWrapper"]
     {
     background-color: white;
+    width="1780";
     border-radius: 15px;
     }
     </style>
