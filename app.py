@@ -139,7 +139,7 @@ border2= """
 
 border3= """
     <style>
-    [data-testid="stFullScreenFrame"]
+    [data-testid="element-container"]
     {
     background-color: white;
     border-radius: 15px;
