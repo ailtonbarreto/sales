@@ -50,9 +50,9 @@ col3, col4, col5 = st.columns(3)
 
 
 with colb:
-    year = st.selectbox("Year",df["Year"].unique())
+    year = st.selectbox(" Year",df["Year"].unique())
 with colc:
-    month = st.selectbox("Month", df["Month"].unique())
+    month = st.selectbox(" Month", df["Month"].unique())
 
 #----------------------------------------------------------------------------------------------------
 #dataframe filtered
