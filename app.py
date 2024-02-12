@@ -6,10 +6,10 @@ st.set_page_config(layout="wide",initial_sidebar_state="collapsed")
 st.sidebar.title("Filters",anchor=False)
 #----------------------------------------------------------------------------------------------------
 #CSS
-
+# [data´testid = 'styles_stateContainer__CelYF"]
 pgbg= """
     <style>
-    [data´testid = 'styles_stateContainer__CelYF"]
+
     background-image = url("https://www.chromethemer.com/wallpapers/chromebook-wallpapers/images/960/blue-space-chromebook-wallpaper.jpg")
     background-size = cover
     </style>
