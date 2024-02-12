@@ -12,7 +12,7 @@ pgbg= """
     <style>
     [data-testid="stAppViewContainer"]
     {
-    background-image: url("https://www.chromethemer.com/wallpapers/chromebook-wallpapers/images/960/blue-space-chromebook-wallpaper.jpg");
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapercave.com%2Ftime-travel-wallpapers&psig=AOvVaw01XCWWuKh3THyu0yiuwko1&ust=1707855904470000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCNCCr5bRpoQDFQAAAAAdAAAAABAb");
     background-size: cover;
     }
     </style>
