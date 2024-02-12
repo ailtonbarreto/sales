@@ -18,3 +18,7 @@ div header{
 footer{
     visibility: hidden;
 }
+
+section{
+    background-color: blue;
+}
