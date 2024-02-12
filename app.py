@@ -44,22 +44,22 @@ df["Month"] = df["Month"].apply(determinar_mes)
 
 #----------------------------------------------------------------------------------------------------
 #Page layout
-
+cola, colb = st.columns(2)
 container = st.container()
 col1, col2 = st.columns(2)
 col3, col4, col5 = st.columns(3)
 
-with container:
+
+with cola:
     year = st.selectbox("Year",df["Year"].unique())
     month = st.selectbox("Month", df["Month"].unique())
-    st.title(f'Sales Analysis {month} - {year}',anchor=False)
-
 
 #----------------------------------------------------------------------------------------------------
 #dataframe filtered
-  
-df_filtered = df.query('Year == @year & Month == @month')
+df_filtered = df.query('Year == @year & Month == @month')  
 
+with container:
+    st.title(f'Sales Analysis {month} - {year}',anchor=False)
 #----------------------------------------------------------------------------------------------------
 #Graphics
 
