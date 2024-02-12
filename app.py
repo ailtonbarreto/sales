@@ -141,8 +141,8 @@ border3= """
     <style>
     [data-testid="element-container"]
     {
-    background-color: white;
-    border-radius: 15px;
+    background-color: black;
+    border-radius: 15px 15px;
     }
     </style>
 """
