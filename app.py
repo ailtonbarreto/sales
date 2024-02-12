@@ -116,7 +116,7 @@ col5.plotly_chart(fig_rating, use_container_width=True)
 
 border= """
     <style>
-    [data-testid="stVerticalBlock"]
+    [class ="stPlotlyChart js-plotly-plot"]
     {
     background-color: black;
     border-radius: 15px;
