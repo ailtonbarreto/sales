@@ -53,7 +53,7 @@ df_filtered = df.query('Year == @year & Month == @month')
 #----------------------------------------------------------------------------------------------------
 #Page layout
 
-cola,colb = st.columns([100,1])
+cola = st.columns(1)
 col1, col2 = st.columns(2)
 col3, col4, col5 = st.columns(3)
 
