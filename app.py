@@ -50,7 +50,7 @@ col1, col2 = st.columns(2)
 col3, col4, col5 = st.columns(3)
 
 
-with cola:
+with colb:
     year = st.selectbox("Year",df["Year"].unique())
     month = st.selectbox("Month", df["Month"].unique())
 
@@ -58,7 +58,7 @@ with cola:
 #dataframe filtered
 df_filtered = df.query('Year == @year & Month == @month')  
 
-with container:
+with cola:
     st.title(f'Sales Analysis {month} - {year}',anchor=False)
 #----------------------------------------------------------------------------------------------------
 #Graphics
