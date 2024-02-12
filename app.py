@@ -44,8 +44,7 @@ df["Month"] = df["Month"].apply(determinar_mes)
 #----------------------------------------------------------------------------------------------------
 #filters
 
-year = st.sidebar.selectbox("Year",df["Year"].unique())
-month = st.sidebar.selectbox("Month", df["Month"].unique())
+
 #----------------------------------------------------------------------------------------------------
 #dataframe filtered
 
@@ -59,6 +58,8 @@ col3, col4, col5 = st.columns(3)
 
 with container:
     st.title(f'Sales Analysis {month} - {year}',anchor=False)
+    year = st.selectbox("Year",df["Year"].unique())
+    month = st.selectbox("Month", df["Month"].unique())
 #----------------------------------------------------------------------------------------------------
 #Graphics
 
