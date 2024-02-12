@@ -20,6 +20,6 @@ div header{
     color: white;
 }
 
-#stVerticalBlockBorderWrapper{
+.columns{
     border-radius: 15px;
 }
