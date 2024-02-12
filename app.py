@@ -9,7 +9,7 @@ st.sidebar.title("Filters",anchor=False)
 # [data´testid = 'styles_stateContainer__CelYF"]
 pgbg= """
     <style>
-    [data-testid="stAppViewBlockContainer"]
+    [data-testid="stAppViewContainer"]
     {
     background-image: url("https://www.chromethemer.com/wallpapers/chromebook-wallpapers/images/960/blue-space-chromebook-wallpaper.jpg")
     background-size: cover
