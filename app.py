@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-st.set_page_config(layout="wide",initial_sidebar_state="collapsed")
-st.sidebar.title("Filters",anchor=False)
+st.set_page_config(layout="wide")
+
 #----------------------------------------------------------------------------------------------------
 #CSS
 
