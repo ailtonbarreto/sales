@@ -145,6 +145,17 @@ desativardetalhes = """
 """
 
 
+desativarfooter = """
+    <style>
+    [data-testid="manage-app-button"]
+    {
+    visibility: hidden;
+    }
+    </style>
+"""
+
+st.markdown(desativarfooter,unsafe_allow_html=True)
+
 st.markdown(desativardetalhes,unsafe_allow_html=True)
 
 st.markdown(border,unsafe_allow_html=True)
