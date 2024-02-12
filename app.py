@@ -130,7 +130,7 @@ border = """
     [data-testid="stSelectbox"]
     {
     background-color: #FFFFFF;
-    border-radius: 10px 10px;
+    border-radius:  15px;
     }
     </style>
 """
