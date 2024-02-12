@@ -12,7 +12,7 @@ pgbg= """
     <style>
     [data-testid="stAppViewContainer"]
     {
-    background-image: url("https://drive.google.com/file/d/1j25crFKTzrQKZknzXst7HVNmepVyjTV2/view?usp=drive_link");
+    background-image: url("https://i.pinimg.com/736x/1d/5a/9e/1d5a9e0d935d20297b6033d9871f1562.jpg");
     </style>
 """
 
