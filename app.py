@@ -85,7 +85,11 @@ col2.plotly_chart(fig_prod, use_container_width=True)
 city_total = df_filtered.groupby("City")[["Total"]].sum().reset_index()
 fig_city = px.pie(city_total, names="City", values="Total",color_discrete_sequence=['#00509d'],
                    title="City Sales")
-fig_city.update_yaxes(showgrid=False,showaxes=False)
+fig_city.update_xaxes(showticklabels=False, showgrid=False, visible=False)
+fig_city.update_yaxes(showticklabels=False, showgrid=False, visible=False)
+
+
+
 col3.plotly_chart(fig_city, use_container_width=True)
 #----------------------------------------------------------------------------------------------------
 fig_kinddf = df_filtered.groupby("Payment")[["Total"]].sum().reset_index()
