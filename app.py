@@ -85,7 +85,7 @@ col2.plotly_chart(fig_prod, use_container_width=True)
 city_total = df_filtered.groupby("City")[["Total"]].sum().reset_index()
 fig_city = px.pie(city_total, names="City", values="Total",color_discrete_sequence=['#00509d'],
                    title="City Sales")
-fig_city.update_yaxes(showgrid=False)
+fig_city.update_yaxes(showgrid=False,showyaxes=False)
 col3.plotly_chart(fig_city, use_container_width=True)
 #----------------------------------------------------------------------------------------------------
 fig_kinddf = df_filtered.groupby("Payment")[["Total"]].sum().reset_index()
@@ -102,7 +102,7 @@ fig_rating = px.bar(df_filtered, y="Rating", x="City",color_discrete_sequence=['
 fig_rating.update_yaxes(showgrid=False)
 col5.plotly_chart(fig_rating, use_container_width=True)
 #----------------------------------------------------------------------------------------------------
-
+#Css
 
 border2= """
     <style>
