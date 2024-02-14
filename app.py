@@ -77,8 +77,8 @@ fig_prod = px.bar(df_filtered,
         color="City", title="Product Line",
         orientation="h",
         color_discrete_sequence=['#16db65','#058c42','#04471c'])
-fig_prod.update_xaxes(showticklabels=False, showgrid=False, visible=False)
-fig_prod.update_yaxes(showticklabels=False, showgrid=False, visible=False)
+fig_prod.update_xaxes(showgrid=False, visible=False)
+fig_prod.update_yaxes(showgrid=False, visible=False)
 
 
 col2.plotly_chart(fig_prod, use_container_width=True)
