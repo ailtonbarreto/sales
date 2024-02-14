@@ -160,7 +160,7 @@ Label = """
     <style>
     [data-testid="stMarkdownContainer"]
     {
-    visibility: hidden;
+    padding: 10px;
     }
     </style>
 """
