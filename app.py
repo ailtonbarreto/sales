@@ -165,7 +165,7 @@ Label = """
     </style>
 """
 
-
+st.markdown(Label,unsafe_allow_html=True)
 
 st.markdown(desativarfooter,unsafe_allow_html=True)
 
