@@ -154,6 +154,19 @@ desativarfooter = """
     </style>
 """
 
+
+
+Label = """
+    <style>
+    [data-testid="stMarkdownContainer"]
+    {
+    visibility: hidden;
+    }
+    </style>
+"""
+
+
+
 st.markdown(desativarfooter,unsafe_allow_html=True)
 
 st.markdown(desativardetalhes,unsafe_allow_html=True)
@@ -161,7 +174,6 @@ st.markdown(desativardetalhes,unsafe_allow_html=True)
 st.markdown(border,unsafe_allow_html=True)
 
 st.markdown(border2,unsafe_allow_html=True)
-
 
 st.markdown(border3,unsafe_allow_html=True)
 
