@@ -155,7 +155,6 @@ desativarfooter = """
 """
 
 
-
 Label = """
     <style>
     [data-testid="stMarkdownContainer"]
@@ -164,6 +163,17 @@ Label = """
     }
     </style>
 """
+
+borderselect = """
+    <style>
+    [data-baseweb="select"]
+    {
+    padding: 5px;
+    }
+    </style>
+"""
+
+st.markdown(borderselect,unsafe_allow_html=True)
 
 st.markdown(Label,unsafe_allow_html=True)
 
