@@ -77,7 +77,9 @@ fig_prod = px.bar(df_filtered,
         color="City", title="Product Line",
         orientation="h",
         color_discrete_sequence=['#16db65','#058c42','#04471c'])
-fig_prod.update_xaxes(showgrid=False)
+fig_prod.update_xaxes(showticklabels=False, showgrid=False, visible=False)
+fig_prod.update_yaxes(showticklabels=False, showgrid=False, visible=False)
+
 
 col2.plotly_chart(fig_prod, use_container_width=True)
 
@@ -87,8 +89,6 @@ fig_city = px.pie(city_total, names="City", values="Total",color_discrete_sequen
                    title="City Sales")
 fig_city.update_xaxes(showticklabels=False, showgrid=False, visible=False)
 fig_city.update_yaxes(showticklabels=False, showgrid=False, visible=False)
-
-
 
 col3.plotly_chart(fig_city, use_container_width=True)
 #----------------------------------------------------------------------------------------------------
