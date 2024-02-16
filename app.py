@@ -108,17 +108,6 @@ col5.plotly_chart(fig_rating, use_container_width=True)
 
 
 
-# borda_graficos = """
-#     <style>
-#     [class="st-emotion-cache-ocqkz7 e1f1d6gn5"]
-#     {
-#     border-radius: 15px;
-#     background-color: white;
-#     border-color: white;
-#     }
-#     </style>
-# """
-
 borda_graficos2 = """
     <style>
     [data-testid="element-container"]
@@ -169,7 +158,7 @@ borderselect = """
 """
 
 st.markdown(borda_graficos2,unsafe_allow_html=True)
-# st.markdown(borda_graficos,unsafe_allow_html=True)
+
 
 st.markdown(borderselect,unsafe_allow_html=True)
 
