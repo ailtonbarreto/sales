@@ -108,6 +108,16 @@ col5.plotly_chart(fig_rating, use_container_width=True)
 
 
 
+borda_graficos = """
+    <style>
+    [data-testid="stHorizontalBlock"]
+    {
+    border-radius: 15px;
+    }
+    </style>
+"""
+
+
 desativardetalhes = """
     <style>
     [data-testid="StyledFullScreenButton"]
@@ -145,6 +155,8 @@ borderselect = """
     }
     </style>
 """
+
+st.markdown(borda_graficos,unsafe_allow_html=True)
 
 st.markdown(borderselect,unsafe_allow_html=True)
 
