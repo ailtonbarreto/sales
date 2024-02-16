@@ -77,7 +77,7 @@ fig_prod = px.bar(df_filtered,
         color="City", title="Product Line",
         orientation="h",
         color_discrete_sequence=['#16db65','#058c42','#04471c'])
-fig_prod.update_xaxes(showgrid=False,visible=True,title=False)
+fig_prod.update_xaxes(showgrid=False,visible=True,title="")
 fig_prod.update_yaxes(showgrid=False, visible=True)
 
 
