@@ -101,7 +101,9 @@ col4.plotly_chart(fig_kind, use_container_width=True)
 city_total = df_filtered.groupby("City")[["Rating"]].mean().reset_index()
 fig_rating = px.bar(df_filtered, y="Rating", x="City",color_discrete_sequence=['#0d47a1'],
                    title="Rating")
-fig_rating.update_yaxes(showgrid=False)
+fig_rating.update_xaxes(showgrid=False,visible=True,title="")
+fig_rating.update_yaxes(showgrid=False,visible=True,title="")
+
 col5.plotly_chart(fig_rating, use_container_width=True)
 #----------------------------------------------------------------------------------------------------
 #Css
