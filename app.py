@@ -106,14 +106,6 @@ col5.plotly_chart(fig_rating, use_container_width=True)
 #----------------------------------------------------------------------------------------------------
 #Css
 
-# border2= """
-#     <style>
-#     [class="main-svg"]
-#     {
-#     border-radius: 15px 15px;
-#     }
-#     </style>
-# """
 
 
 border3 = """
@@ -127,15 +119,6 @@ border3 = """
 """
 
 
-border = """
-    <style>
-    [data-testid="stSelectbox"]
-    {
-    background-color: #FFFFFF;
-    border-radius:  15px;
-    }
-    </style>
-"""
 
 desativardetalhes = """
     <style>
@@ -182,10 +165,6 @@ st.markdown(Label,unsafe_allow_html=True)
 st.markdown(desativarfooter,unsafe_allow_html=True)
 
 st.markdown(desativardetalhes,unsafe_allow_html=True)
-
-st.markdown(border,unsafe_allow_html=True)
-
-# st.markdown(border2,unsafe_allow_html=True)
 
 st.markdown(border3,unsafe_allow_html=True)
 
