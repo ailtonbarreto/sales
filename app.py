@@ -110,7 +110,7 @@ col5.plotly_chart(fig_rating, use_container_width=True)
 
 borda_graficos = """
     <style>
-    [data-testid="stAppViewBlockContainer"]
+    [data-testid="stHorizontalBlock"]
     {
     border-radius: 15px;
     border-color: white;
