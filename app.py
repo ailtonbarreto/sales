@@ -110,7 +110,7 @@ col5.plotly_chart(fig_rating, use_container_width=True)
 
 borda_graficos2 = """
     <style>
-    [class="plot-container plotly"]
+    [data-testid="stHorizontalBlock"]
     {
     border-radius: 15px;
     background-color: white;
