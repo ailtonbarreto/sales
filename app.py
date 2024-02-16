@@ -108,6 +108,21 @@ col5.plotly_chart(fig_rating, use_container_width=True)
 
 # data-testid="element-container"
 
+
+borda_graficos = """
+    <style>
+    [data-testid="stVerticalBlockBorderWrapper"]
+    {
+    border-radius: 15px;
+    background-color: white;
+    border-color: white;
+    }
+    </style>
+"""
+
+
+
+
 borda_graficos2 = """
     <style>
     [data-testid="column"]
@@ -158,7 +173,7 @@ borderselect = """
 """
 
 st.markdown(borda_graficos2,unsafe_allow_html=True)
-
+st.markdown(borda_graficos,unsafe_allow_html=True)
 
 st.markdown(borderselect,unsafe_allow_html=True)
 
