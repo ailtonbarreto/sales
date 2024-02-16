@@ -68,7 +68,7 @@ with cola:
 fig_date = px.bar(df_filtered.groupby(['Day','City'])[["Total"]].sum().reset_index(),
         x="Day", y="Total", color="City", title="Daily Sales",
         color_discrete_sequence=['#023e8a','#0a9396','#0077b6'])
-fig_date.update_scenes(overwrite=False)
+# fig_date.update_scenes(overwrite=False)
 fig_date.update_yaxes(showgrid=False)
 col1.plotly_chart(fig_date, use_container_width=True)
 
