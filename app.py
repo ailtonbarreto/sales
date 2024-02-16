@@ -113,7 +113,7 @@ borda_graficos = """
     [data-testid="stAppViewContainer"]
     {
     border-radius: 15px;
-    border-color: white;
+    background-color: white;
     }
     </style>
 """
