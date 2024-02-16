@@ -119,6 +119,16 @@ borda_graficos = """
     </style>
 """
 
+borda_graficos2 = """
+    <style>
+    [data-testid="stVerticalBlockBorderWrapper"]
+    {
+    border-radius: 15px;
+    background-color: white;
+    border-color: white;
+    }
+    </style>
+"""
 
 desativardetalhes = """
     <style>
@@ -158,6 +168,7 @@ borderselect = """
     </style>
 """
 
+st.markdown(borda_graficos2,unsafe_allow_html=True)
 st.markdown(borda_graficos,unsafe_allow_html=True)
 
 st.markdown(borderselect,unsafe_allow_html=True)
