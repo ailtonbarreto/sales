@@ -110,7 +110,7 @@ col5.plotly_chart(fig_rating, use_container_width=True)
 
 borda_graficos = """
     <style>
-    [data-testid="stPlotlyChart js-plotly-plot"]
+    [class="stPlotlyChart js-plotly-plot"]
     {
     border-radius: 15px;
     background-color: white;
