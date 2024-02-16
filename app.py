@@ -121,7 +121,7 @@ borda_graficos = """
 
 borda_graficos2 = """
     <style>
-    [data-testid="stVerticalBlockBorderWrapper"]
+    [class="user-select-none svg-container"]
     {
     border-radius: 15px;
     background-color: white;
