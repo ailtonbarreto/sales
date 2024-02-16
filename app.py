@@ -121,7 +121,7 @@ borda_graficos = """
 
 borda_graficos2 = """
     <style>
-    [class="main-svg"]
+    [class="user-select-none svg-container"]
     {
     border-radius: 15px;
     background-color: white;
