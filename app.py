@@ -113,6 +113,7 @@ borda_graficos = """
     [data-testid="stHorizontalBlock"]
     {
     border-radius: 15px;
+    border-color: white;
     }
     </style>
 """
