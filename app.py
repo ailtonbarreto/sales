@@ -94,6 +94,7 @@ fig_kinddf = fig_kinddf.sort_values(by="Total")
 fig_kind = px.bar(fig_kinddf, x="Total", y="Payment",
                    title="Per Payment",orientation="h",color_discrete_sequence=['#0e7c7b'])
 fig_kind.update_xaxes(showgrid=False,visible=True,title="")
+fig_kind.update_yaxes(showgrid=False,visible=True,title="")
 col4.plotly_chart(fig_kind, use_container_width=True)
 
 
