@@ -111,11 +111,11 @@ col5.plotly_chart(fig_rating, use_container_width=True)
 
 borda_graficos = """
     <style>
-    [data-testid="stVerticalBlockBorderWrapper"]
+    [data-testid="element-container"]
     {
     border-radius: 15px;
     background-color: white;
-    border-color: white;
+    padding: 20px;
     }
     </style>
 """
