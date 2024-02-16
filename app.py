@@ -108,18 +108,6 @@ col5.plotly_chart(fig_rating, use_container_width=True)
 
 
 
-border3 = """
-    <style>
-    [data-testid="element-container"]
-    {
-    background-color: #FFFFFF;
-    border-radius: 15px 15px;
-    }
-    </style>
-"""
-
-
-
 desativardetalhes = """
     <style>
     [data-testid="StyledFullScreenButton"]
@@ -166,6 +154,5 @@ st.markdown(desativarfooter,unsafe_allow_html=True)
 
 st.markdown(desativardetalhes,unsafe_allow_html=True)
 
-st.markdown(border3,unsafe_allow_html=True)
 
 #----------------------------------------------------------------------------------------------------
