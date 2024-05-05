@@ -173,6 +173,15 @@ borderselect = """
     </style>
 """
 
+hidebordertitle = """
+    <style>
+    [class="st-emotion-cache-6vw1hb e1f1d6gn3"]
+    {
+    backface-visibility: hidden;
+    }
+    </style>
+"""
+
 st.markdown(borda_graficos2,unsafe_allow_html=True)
 
 st.markdown(borda_graficos,unsafe_allow_html=True)
@@ -185,5 +194,6 @@ st.markdown(desativarfooter,unsafe_allow_html=True)
 
 st.markdown(desativardetalhes,unsafe_allow_html=True)
 
+st.markdown(hidebordertitle,unsafe_allow_html=True)
 
 #----------------------------------------------------------------------------------------------------
