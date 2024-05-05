@@ -178,7 +178,7 @@ hidebordertitle = """
     [class="st-emotion-cache-6vw1hb e1f1d6gn3"]
     {
     background: none;
-    backround-color: none;
+    backface-visibility: hidden;
     }
     </style>
 """
