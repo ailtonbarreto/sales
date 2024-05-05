@@ -175,7 +175,7 @@ borderselect = """
 
 hidebordertitle = """
     <style>
-    [class="st-emotion-cache-6vw1hb e1f1d6gn3"]
+    [id="sales-analysis-jan-2019"]
     {
     background: none;
     }
