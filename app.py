@@ -178,6 +178,7 @@ hidebordertitle = """
     [id="sales-analysis-jan-2019"]
     {
     background: none;
+    backround-color: none;
     }
     </style>
 """
