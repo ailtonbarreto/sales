@@ -12,8 +12,12 @@ with open("style.css") as f:
 
 #----------------------------------------------------------------------------------------------------
 
-df = pd.read_csv("supermarket_sales.csv", sep=";", decimal=",")
+
+url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQGR4d36ju2xg3QNaegQ1HwNQ_QN1-NrnGdWCvDJgG9Dxo4Sm9-8a4wriCInp__TsLpzHt9UOdyLTBd/pub?output=csv"
+
+df = pd.read_csv(url, decimal=",")
 df["Date"] = pd.to_datetime(df["Date"])
+# df["Date"] = df["Date"].dt.strftime('%d/%m/%Y')
 df=df.sort_values("Date")
 #----------------------------------------------------------------------------------------------------
 #Tratamento dos dados
@@ -69,10 +73,12 @@ fig_date = px.bar(df_filtered.groupby(['Day','City'])[["Total"]].sum().reset_ind
         x="Day", y="Total", color="City", title="Daily Sales",
         color_discrete_sequence=['#023e8a','#0a9396','#0077b6'])
 fig_date.update_yaxes(showgrid=False, visible=True,title="")
+
 col1.plotly_chart(fig_date, use_container_width=True)
 
+#----------------------------------------------------------------------------------------------------
 fig_prod = px.bar(df_filtered, 
-        x="Date", y="Product line", 
+        x="Day", y="Product line", 
         color="City", title="Product Line",
         orientation="h",
         color_discrete_sequence=['#16db65','#058c42','#04471c'])
