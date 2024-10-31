@@ -131,7 +131,7 @@ borda_graficos = """
 
 borda_graficos2 = """
     <style>
-    [data-testid="column"]
+    [data-testid="stColumn"]
     {
     border-radius: 15px;
     background-color: white;
