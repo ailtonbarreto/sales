@@ -1,3 +1,6 @@
+import base64
+from pathlib import Path
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -7,8 +10,6 @@ st.set_page_config(layout="wide",page_title="Sales analysis",page_icon="📊")
 #----------------------------------------------------------------------------------------------------
 #CSS
 
-with open("style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>",unsafe_allow_html = True)
 
 #----------------------------------------------------------------------------------------------------
 
@@ -116,6 +117,21 @@ col5.plotly_chart(fig_rating, use_container_width=True)
 
 # data-testid="element-container"
 
+bg_image = base64.b64encode(Path(__file__).with_name("bg.jpg").read_bytes()).decode("ascii")
+
+bg = f"""
+    <style>
+    [data-testid="stMainBlockContainer"]
+    {{
+    background-image: url("data:image/jpeg;base64,{bg_image}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }}
+    </style>
+"""
+
 
 borda_graficos = """
     <style>
@@ -179,6 +195,7 @@ borderselect = """
     </style>
 """
 
+st.markdown(bg,unsafe_allow_html=True)
 
 st.markdown(borda_graficos2,unsafe_allow_html=True)
 
