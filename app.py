@@ -167,15 +167,6 @@ desativardetalhes = """
 """
 
 
-desativarfooter = """
-    <style>
-    [data-testid="manage-app-button"]
-    {
-    visibility: hidden;
-    }
-    </style>
-"""
-
 
 Label = """
     <style>
@@ -205,9 +196,15 @@ st.markdown(borderselect,unsafe_allow_html=True)
 
 st.markdown(Label,unsafe_allow_html=True)
 
-st.markdown(desativarfooter,unsafe_allow_html=True)
-
 st.markdown(desativardetalhes,unsafe_allow_html=True)
+
+hide_st_style = """
+            <style>
+            header {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 #----------------------------------------------------------------------------------------------------
